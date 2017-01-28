@@ -1,0 +1,10 @@
+P(O | D, E, S) = 1 / (1 + e^{(-E * S / D)})
+
+\text{EU}[E] = R(O)P(O|E,S,D) - C(E)
+
+\argmax{E} \text{EU}[E]
+
+P(D,S_a|E_a,O_a) \propto P(O_a|E_a,S_a,D)P(E_a|S_a,D)P(S_a)P(D)
+
+\text{EU}[E_c] = R(O_c)\sum_D [P(O_c|E_c, S_c, D)P(D|E_a, O_a)] - C(E_c)
+
